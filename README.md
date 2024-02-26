@@ -1,5 +1,5 @@
 
-PenPals: 
+<h1>PenPals:</h1> 
 
 Internal Messaging Application for Small to Medium-Sized Businesses
 Welcome to PenPals! Our internal messaging application is currently under development and accessible through GitHub using your preferred Integrated Development Environment (IDE). Here's how you can get started:
