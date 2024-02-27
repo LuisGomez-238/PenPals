@@ -1,0 +1,50 @@
+.logo {
+    display: flex;
+    width: 14rem;
+    align-items: baseline;
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    background-color: #848871;
+}
+.loginBackground {
+    width: 50vw;
+    height: 100vh;
+}
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+.loginForm > input {
+    margin-top: 1rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+::placeholder {
+    color: white;
+} 
+.loginForm > button{
+    margin-top: 1rem;
+    border-radius: 56px;
+    width: 15rem;
+    background-color: #262B15;
+    color: white;
+}
+.loginForm > a {
+    margin-top: 1rem;
+    color: #262B15;
+}
