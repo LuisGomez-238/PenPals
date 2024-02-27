@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase';
 import { Navigate } from 'react-router-dom';
+import "../App.css";
+import background from "../assets/loginBackground.png"
+import logo from "../assets/logo.png"
 
 function Home({ user }) {
   // State to manage whether the user is signing up or signing in
@@ -64,15 +67,18 @@ function Home({ user }) {
   }
 
   return (
-    <section>
-      <h2>HomePage</h2>
-      <form>
+    <section className='login'>
+      <img src={background} className='loginBackground'></img>
+      <form className='loginForm'>
+      <div className='logo'><img src={logo}></img>
+      <h2>Pen Pals</h2>
+      </div>
         {/* Conditional rendering based on sign-up or sign-in mode */}
         {!isSignUp ? <legend>Sign up</legend> : <legend>Sign In</legend>}
-        <label htmlFor="email">Email</label>
-        <input type="email" id="email" value={email} onChange={handleEmailChange} />
-        <label htmlFor="password">Password</label>
-        <input type="password" id="password" value={password} onChange={handlePasswordChange} />
+        <label htmlFor="email"></label>
+        <input type="email" id="email" value={email} onChange={handleEmailChange} placeholder='Email' />
+        <label htmlFor="password"></label>
+        <input type="password" id="password" value={password} onChange={handlePasswordChange} placeholder='Password' />
         
         {/* Conditional rendering of the sign-up or sign-in button */}
         {!isSignUp && (
